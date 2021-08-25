@@ -29,6 +29,11 @@ a.active {
     text-decoration: underline;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 button {
     margin: 9px 0;
     padding: 0 4px;
