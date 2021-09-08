@@ -3,8 +3,8 @@ var currentDateObject = new Date();
 var currentDateFormatted = formatDate(currentDateObject);
 document.getElementById("today").textContent = currentDateFormatted;
 
-//Display next class date
-var allClassDatesUnix = [1630599000, 1631203800, 1631808600, 1632413400, 1633018200, 1633623000, 1634227800, 1634832600, 1635437400, 1636042200, 1636650600, 1637255400, 1638465000, 1639069800, 1639674600];
+//Display next class date ...1630599000,
+var allClassDatesUnix = [1631203800, 1631808600, 1632413400, 1633018200, 1633623000, 1634227800, 1634832600, 1635437400, 1636042200, 1636650600, 1637255400, 1638465000, 1639069800, 1639674600];
 
 var currentTimestampUnix = Math.floor(currentDateObject.getTime()/1000.0); 
 
