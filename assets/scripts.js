@@ -4,11 +4,11 @@ var currentDateFormatted = formatDate(currentDateObject);
 document.getElementById("today").textContent = currentDateFormatted;
 
 //Display next class date
-var allClassDatesUnix = [1630599000, 1631203800, 1631808600, 1632413400, 1633018200, 1633623000, 1634227800, 1634832600, 1635437400, 1636042200, 1636650600, 1637255400, 1638465000, 1639069800, 1639674600];
+var allClassDatesUnix = [1630599000, 1631203800, 1631764800, 1632369600, 1632974400, 1633579200, 1634184000, 1634788800, 1635393600, 1635998400, 1636606800, 1637211600, 1638421200, 1639026000, 1639630800];
 
 var currentTimestampUnix = Math.floor(currentDateObject.getTime()/1000.0); 
 
-if (currentTimestampUnix < 1639674600) {
+if (currentTimestampUnix < 1639630800) {
     for (var classDateUnix of allClassDatesUnix) {
         if(classDateUnix > currentTimestampUnix) {
             var nextClassDateUnix = classDateUnix;
