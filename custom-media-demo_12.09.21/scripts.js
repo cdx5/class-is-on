@@ -1,26 +1,29 @@
 //Global variables
 var video = document.getElementById('container');
 var source = document.getElementById('current');
+
 var playPause = document.getElementById('playPause');
+
 var nextButton = document.getElementById('next');
 var prevButton = document.getElementById('prev');
+
 var videoList = document.querySelectorAll('figcaption a');
+
 var nextLink = videoList[1].getAttribute('href');
 var nextID = videoList[1].getAttribute('id');
+
 var prevLink = videoList[videoList.length-1].getAttribute('href');
 var prevID = videoList[videoList.length-1].getAttribute('id');
-
-console.log(videoList.length);
 
 //Executing functions
 playPause.onclick = togglePlay;
 
+nextButton.onclick = next; 
+prevButton.onclick = prev;
+
 for (var i=0; i < videoList.length; i++) {
 	videoList[i].onclick = select;
 }
-
-nextButton.onclick = next;
-prevButton.onclick = prev;
 
 //Defining functions
 function togglePlay() {
